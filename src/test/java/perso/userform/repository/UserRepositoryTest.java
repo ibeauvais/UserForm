@@ -4,8 +4,8 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.junit.Before;
 import org.junit.Test;
-import perso.userform.domain.User;
 import perso.userform.configuration.UserFormModule;
+import perso.userform.domain.User;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -28,6 +28,6 @@ public class UserRepositoryTest {
         userRepository.createUser(user);
 
 
-        assertThat(user._id).isNotNull();
+        assertThat(user.get_id()).isNotNull();
     }
 }

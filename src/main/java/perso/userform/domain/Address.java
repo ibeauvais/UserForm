@@ -2,13 +2,40 @@ package perso.userform.domain;
 
 public class Address {
 
-    public final String street;
-    public final String city;
-    public final String postalCode;
+    private String street;
+    private String city;
+    private String postalCode;
 
     public Address(String street, String city, String postalCode) {
         this.street = street;
         this.city = city;
+        this.postalCode = postalCode;
+    }
+
+    public Address() {
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
 }

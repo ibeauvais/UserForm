@@ -14,7 +14,6 @@ import perso.userform.web.resources.UserResource;
 
 import java.io.IOException;
 import java.util.Collections;
-import java.util.Map;
 import java.util.Properties;
 
 public class UserFormModule extends JerseyServletModule {
@@ -31,7 +30,8 @@ public class UserFormModule extends JerseyServletModule {
 
         Names.bindProperties(binder(), properties);
 
-        serve("/resources/*").with(GuiceContainer.class);
+
+        serve("/resources/*").with(GuiceContainer.class, Collections.singletonMap("com.sun.jersey.api.json.POJOMappingFeature", "true"));
     }
 
     @Provides

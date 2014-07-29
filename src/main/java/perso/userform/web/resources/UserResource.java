@@ -32,8 +32,10 @@ public class UserResource {
 
     @PUT
     @Path("/user")
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response createUser(User user) {
         userRepository.createUser(user);
+
         return Response.ok(user).build();
     }
 }

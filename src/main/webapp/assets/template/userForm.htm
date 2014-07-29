@@ -1,7 +1,31 @@
-<fieldset>
-    <legend>User</legend>
-    <label>firtname</label>
-    <input type="text" placeholder="Enter firstname" id="firstname" name="firstname">
-    </label>
-    <button type="submit" class="btn">Submit</button>
-</fieldset>
+<form id="userForm">
+    <fieldset>
+        <legend>User</legend>
+        <label>firstname</label>
+        <input type="text" placeholder="Enter firstname" id="firstname" name="firstname">
+
+        <label>lastname</label>
+        <input type="text" placeholder="Enter lastname" id="lastname" name="lastname">
+
+        <label>Fixed Phone</label>
+        <input type="text" placeholder="Enter Fixed Phone" id="fixedPhone" name="fixedPhone">
+
+        <label>Mobile Phone</label>
+        <input type="text" placeholder="Enter Mobile Phone" id="mobilePhone" name="mobilePhone">
+
+        <fieldset>
+            <legend>Adress</legend>
+            <label>Street </label>
+            <input type="text" placeholder="Enter address street" id="address.street" name="address.street">
+
+            <label>City</label>
+            <input type="text" placeholder="Enter address city" id="address.city" name="address.city">
+
+            <label>Postal Code</label>
+            <input type="text" placeholder="Enter address postal code" id="address.postalCode"
+                   name="address.postalCode">
+        </fieldset>
+    </fieldset>
+    <br/>
+    <button type="button" class="btn" id="addNewUser">add new User</button>
+</form>
